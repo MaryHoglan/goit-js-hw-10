@@ -1,6 +1,22 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
+
+iziToast.settings({
+    position: 'topRight',  
+    timeout: 5000,         
+    closeOnEscape: true,  
+    progressBar: true,     
+    theme: 'dark',        
+    transitionIn: 'fadeIn', 
+    transitionOut: 'fadeOut', 
+    pauseOnHover: true,
+    balloon: true,
+   
+});
 
 const datetimePicker = document.querySelector("#datetime-picker");
 const startBtn = document.querySelector("[data-start]");

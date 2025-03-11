@@ -40,7 +40,7 @@ const options = {
         userSelectedDate = selectedDates[0];
         if (userSelectedDate < new Date()) {
             iziToast.error({
-                title: "Помилка",
+                title: "Error",
                 message: "Please choose a date in the future",
             });
             startBtn.disabled = true;
@@ -77,8 +77,8 @@ function updateTimer() {
     if (diff <= 0) {
         clearInterval(countdownInterval);
         iziToast.success({
-            title: "Готово!",
-            message: "Час вийшов!",
+            title: "Done",
+            message: "Time's up!",
         });
         startBtn.disabled = true;
         datetimePicker.disabled = false;
